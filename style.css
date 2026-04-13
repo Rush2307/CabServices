@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #d32f2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 300px;
+  display: none;
+  object-fit: cover;
+}
+
+.active {
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* BUTTONS */
+.btn {
+  background: red;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+/* SERVICES */
+#services {
+  padding: 40px;
+  text-align: center;
+  background: #fff8e1;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+}
+
+/* BOOKING */
+#booking {
+  padding: 40px;
+  text-align: center;
+  background: #ffe0b2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+}
+
+/* CONTACT */
+#contact {
+  padding: 40px;
+  text-align: center;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+  }
+}
